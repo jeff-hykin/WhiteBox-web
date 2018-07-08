@@ -4,10 +4,11 @@ import loadPage2 from "./page2"
 import setupGoodDom from "good-dom"
 setupGoodDom()
 
-
-// Get the body 
-var body = document.body
-centerChildrenHorizontally(body)
+// 
+// body
+//
+    var body = document.body
+    centerChildrenHorizontally(body)
 
 // 
 // innerBody
@@ -31,7 +32,7 @@ centerChildrenHorizontally(body)
     banner.style = {
         width: "100%",
         backgroundColor: colors["off-black"],
-        height : "35%",
+        height : "37%",
         marginBottom : "1.5rem",
     }
 
@@ -46,7 +47,7 @@ centerChildrenHorizontally(body)
     title.innerHTML = the_w+"hite "+the_b+"ox"
     title.style = {
         color: "white",
-        fontSize: "9rem",
+        fontSize: "8rem",
         fontWeight: "100",
         fontFamily: "'Roboto', sans-serif",
         margin: 0,
@@ -62,7 +63,7 @@ centerChildrenHorizontally(body)
         fontSize: "2rem",
         fontWeight: "100",
         fontFamily: "'Helvetica', sans-serif",
-        marginTop: -15,
+        marginTop: -25,
     }
 
 
@@ -81,7 +82,7 @@ centerChildrenHorizontally(body)
         var whatIsWhiteBox = New("h1")
         whatIsWhiteBox.innerHTML = "What is a WhiteBox?"
         whatIsWhiteBox.style = {
-            fontSize: "2.5rem",
+            fontSize: "2rem",
             fontWeight: "900",
             textDecoration: "underline",
             fontFamily: "Helvetica",
@@ -97,7 +98,7 @@ centerChildrenHorizontally(body)
         whiteBoxIs.addClass("flow-text") 
         whiteBoxIs.style = {
             fontFamily: "Helvetica",
-            fontSize: "1.5rem",
+            fontSize: "1.1rem",
         }
 
 
@@ -106,16 +107,25 @@ centerChildrenHorizontally(body)
 // 
     var nextBtn = New('a') // use the 'a' anchor tag as a button
     nextBtn.innerText = "Is that it?"
-    // when the button is clicked, fade out the inner body, and load page2
-    nextBtn.onclick = ()=>$(innerBody).fadeOut(()=>loadPage2(body))
-    // give the button fancy effect from the materialize-css library
+    // when the button is clicked
+    nextBtn.onclick = function()
+        {
+            // create a function for loading the next page
+            function loadPage2WithBody() 
+                {
+                    loadPage2(body)
+                }
+            // fadeout the innerBody, and once its done, run the loadPage2WithBody() function
+            $(innerBody).fadeOut(loadPage2WithBody)
+        }
+    // give the button fancy effects from the materialize-css library
+    // the hover effects are in the .sass file under "black-button:hover"
     nextBtn.addClass("waves-effect","waves-black","btn-flat","btn-large", "black-button")
     nextBtn.style = {
         textTransform: "revert", // prevent auto-full-caps (aka just use regular capitalization)
-        fontSize: "1.3rem",
+        fontSize: "1.1rem",
         borderBottom: `grey solid 2px`, // add the
     }
-    // the hover effects are in the .sass files under "black-button:hover"
 
 
 // 
