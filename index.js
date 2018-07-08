@@ -1,4 +1,5 @@
 import colors from "./colors.json"
+import $ from "jquery"
 import loadPage2 from "./page2"
 import setupGoodDom from "good-dom"
 setupGoodDom()

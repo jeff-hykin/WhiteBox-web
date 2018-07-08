@@ -1,20 +1,37 @@
 import colors from "./colors.json"
+import $ from "jquery"
 export default (body)=>
 {
 
-// side banner
-var banner = document.createElement("div")
-banner.classList.add("center-content")
-banner.style.height = "400%"
-banner.style.width = "40%"
-banner.style.position = "absolute"
-banner.style.left = 0
-banner.style.backgroundColor = colors["off-black"]
-banner.style.marginBottom = "1.5rem"
-banner.style.display = "none"
-body.appendChild(banner)
-$(banner).fadeIn("slow")
+    // 
+    // side banner
+    // 
+        var banner = New("div")
+        banner.addClass("center-content")
+        banner.style = {
+            height          : "400%",
+            width           : "40%",
+            position        : "absolute",
+            left            : "0",
+            backgroundColor : colors["off-black"],
+            marginBottom    : "1.5rem",
+            display         : "none",   // Start off invisible, let jQuery fade the banner in
+        }
 
+
+
+    //
+    // 
+    // Attach everything
+    // 
+    // 
+        body.add(banner)
+
+
+    //
+    // Animate
+    // 
+        $(banner).fadeIn("slow")
 
 
 
