@@ -1,5 +1,3 @@
-import "hammerjs"
-import "materialize-css"
 import colors from "./colors.json"
 import loadPage2 from "./page2"
 
