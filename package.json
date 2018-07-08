@@ -1,0 +1,28 @@
+{
+  "name": "WhiteBox-web",
+  "version": "1.0.0",
+  "description": "the first landing page for white box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeff-hykin/WhiteBox-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeff-hykin/WhiteBox-web/issues"
+  },
+  "homepage": "https://github.com/jeff-hykin/WhiteBox-web#readme",
+  "dependencies": {
+    "materialize-css": "^0.100.2",
+    "roboto": "^0.8.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.1",
+    "pug": "^2.0.3"
+  }
+}
