@@ -7,7 +7,7 @@ setupGoodDom()
 
 // Get the body 
 var body = document.body
-
+centerChildrenHorizontally(body)
 
 // 
 // innerBody
@@ -16,6 +16,7 @@ var body = document.body
     // dissapear when the "is that it" button is pressed 
     // (without deleting the actual body)
     var innerBody = New('div')
+    centerChildrenHorizontally(innerBody)
     innerBody.addClass("body")
     innerBody.style = {
         width: "100%"
@@ -26,7 +27,7 @@ var body = document.body
 // black banner
 // 
     var banner = New("div")
-    banner.addClass("center-content")
+    centerChildren(banner)
     banner.style = {
         width: "100%",
         backgroundColor: colors["off-black"],
@@ -48,8 +49,21 @@ var body = document.body
         fontSize: "9rem",
         fontWeight: "100",
         fontFamily: "'Roboto', sans-serif",
+        margin: 0,
     }
 
+// 
+// Subtitile
+// 
+    var subtitle = New("p")
+    subtitle.innerHTML = "Take Back Your Data"
+    subtitle.style = {
+        color: "white",
+        fontSize: "2rem",
+        fontWeight: "100",
+        fontFamily: "'Helvetica', sans-serif",
+        marginTop: -15,
+    }
 
 
 // 
@@ -110,6 +124,7 @@ var body = document.body
 // 
 //
         banner.add(title)
+        banner.add(subtitle)
     innerBody.add(banner)
         q1Container.add(whatIsWhiteBox)
         q1Container.add(whiteBoxIs)

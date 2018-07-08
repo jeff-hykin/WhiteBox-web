@@ -7,7 +7,7 @@ export default (body)=>
     // side banner
     // 
         var banner = New("div")
-        banner.addClass("center-content")
+        centerChildren(banner)
         banner.style = {
             height          : "400%",
             width           : "40%",
