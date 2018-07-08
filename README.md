@@ -1,2 +1,13 @@
 # WhiteBox-web
-the first landing page for white box
+Landing page for white box
+
+
+
+# How can I view this?
+If you've got git and npm installed, then just run the following commands:
+```
+git clone https://github.com/jeff-hykin/WhiteBox-web
+npm install -g parcel
+parcel index.pug
+```
+Then open your browser and go to http://localhost:1234
