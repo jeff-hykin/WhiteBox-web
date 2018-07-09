@@ -4,7 +4,7 @@
     "description": "the first landing page for white box",
     "main": "index.js",
     "scripts": {
-        "build": "parcel index.pug --out-dir docs --open",
+        "build": "parcel CODE/index.html --open",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
