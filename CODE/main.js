@@ -95,7 +95,7 @@ setupGoodDom()
     // create the Answer part
     // 
         var whiteBoxIs = New("p")
-        whiteBoxIs.innerHTML = "A physcial box that lets you access your files from anywhere.<br>Kind of like Google Drive or Microsoft One Drive but <b>without the give-your-data-to-Google/Microsoft</b> part."
+        whiteBoxIs.innerHTML = "It's a physcial box that lets you access your files from anywhere.<br>Kind of like Google Drive or Microsoft One Drive but <b>without the give-your-data-to-Google/Microsoft</b> part."
         // "flow-text" this is so that the text scales with the size of the screen
         whiteBoxIs.addClass("flow-text") 
         whiteBoxIs.style = {
