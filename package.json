@@ -1,31 +1,32 @@
 {
-  "name": "whitebox-web",
-  "version": "1.0.0",
-  "description": "the first landing page for white box",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeff-hykin/WhiteBox-web.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jeff-hykin/WhiteBox-web/issues"
-  },
-  "homepage": "https://github.com/jeff-hykin/WhiteBox-web#readme",
-  "dependencies": {
-    "good-dom": "^1.0.0",
-    "hoek": "^4.2.1",
-    "materialize-css": "^0.100.2",
-    "moment": "^2.19.3",
-    "roboto": "^0.8.2"
-  },
-  "devDependencies": {
-    "node-sass": "^4.9.1",
-    "pug": "^2.0.3"
-  }
+    "name": "whitebox-web",
+    "version": "1.0.0",
+    "description": "the first landing page for white box",
+    "main": "index.js",
+    "scripts": {
+        "build": "parcel index.pug --out-dir docs --open",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jeff-hykin/WhiteBox-web.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jeff-hykin/WhiteBox-web/issues"
+    },
+    "homepage": "https://github.com/jeff-hykin/WhiteBox-web#readme",
+    "dependencies": {
+        "good-dom": "^1.0.0",
+        "hoek": "^4.2.1",
+        "materialize-css": "^0.100.2",
+        "moment": "^2.19.3",
+        "roboto": "^0.8.2"
+    },
+    "devDependencies": {
+        "node-sass": "^4.9.1",
+        "pug": "^2.0.3"
+    }
 }
