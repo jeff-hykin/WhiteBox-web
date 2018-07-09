@@ -8,7 +8,7 @@ If you've got git and npm installed, then just run the following commands:
 ```
 git clone https://github.com/jeff-hykin/WhiteBox-web
 cd WhiteBox-web
-npm install -g parcel
+npm install -g parcel-bundler
 parcel index.pug
 ```
 Then open your browser and go to http://localhost:1234
