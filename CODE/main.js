@@ -1,6 +1,8 @@
+// local imports
 import colors from "./colors.json"
-import $ from "jquery"
 import loadPage2 from "./page2"
+// library imports
+import $ from "jquery"
 import setupGoodDom from "good-dom"
 setupGoodDom()
 
