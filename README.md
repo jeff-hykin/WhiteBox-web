@@ -11,5 +11,3 @@ cd WhiteBox-web
 npm install -g parcel-bundler
 parcel index.pug --open
 ```
-Then open your browser and go to http://localhost:1234
-
