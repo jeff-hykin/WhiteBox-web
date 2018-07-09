@@ -1,5 +1,5 @@
 # WhiteBox-web
-Landing page for white box
+Landing page for white box. All of the relevent code is in the CODE folder, pretty much everything else is just setup.
 
 
 
