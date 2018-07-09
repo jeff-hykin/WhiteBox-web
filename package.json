@@ -1,5 +1,5 @@
 {
-  "name": "WhiteBox-web",
+  "name": "whitebox-web",
   "version": "1.0.0",
   "description": "the first landing page for white box",
   "main": "index.js",
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/jeff-hykin/WhiteBox-web#readme",
   "dependencies": {
+    "good-dom": "^1.0.0",
+    "hoek": "^4.2.1",
     "materialize-css": "^0.100.2",
+    "moment": "^2.19.3",
     "roboto": "^0.8.2"
   },
   "devDependencies": {
