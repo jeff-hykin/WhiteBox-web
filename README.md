@@ -7,6 +7,7 @@ Landing page for white box
 If you've got git and npm installed, then just run the following commands:
 ```
 git clone https://github.com/jeff-hykin/WhiteBox-web
+cd WhiteBox-web
 npm install -g parcel
 parcel index.pug
 ```
