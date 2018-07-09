@@ -11,3 +11,4 @@ npm install -g parcel
 parcel index.pug
 ```
 Then open your browser and go to http://localhost:1234
+
